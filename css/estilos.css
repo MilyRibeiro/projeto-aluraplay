@@ -43,6 +43,7 @@ body {
     height: 32px;
     border: 1px solid rgb(211, 211, 211);
     font-size: 16px;
+    color: var(--cinza-texto);
     padding: 3px 8px;
     border: 1px solid rgb(211, 211, 211);
 }
@@ -296,7 +297,6 @@ body {
         height: 420px;
         padding-left: 74px;
     }
-
 }
 
 @media(min-width: 1440px) {

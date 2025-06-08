@@ -66,6 +66,20 @@
     margin-right: 0px;
 } Tudo isso aqui pode ser resolvido com a propriedade gap do flexbox*/
 
+/* VIDEOS: */
+
+.videos__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.videos__item {
+    height: 303px;
+    width: 280px;
+    flex-grow: 1;
+}
+
 /* RODAPÉ: */
 .rodape__container {
     display: flex;
@@ -78,11 +92,13 @@
 @media screen and (min-width: 834px) {
 
     /* CABEÇALHO: */
+
     .cabecalho__pesquisar__item {
         display: block;
     }
 
     /* MENU: */
+
     .menu__container {
         left: 0;
         height: auto;
@@ -98,6 +114,7 @@
     }
 
     /* RODAPÉ: */
+
     .rodape__container {
         justify-content: space-between;
     }
@@ -106,6 +123,7 @@
 /* DESKTOP: */
 @media screen and (min-width: 1440px) {
     /* MENU: */
+
     .menu__container {
         width: 239px;
         overflow: scroll;
