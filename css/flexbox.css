@@ -1,1 +1,57 @@
+/* CABEÇALHO: */
+.cabecalho__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
 
+/* .logo__item {
+    margin-right: 200px;
+} 
+
+.cabecalho__pesquisar__item {
+    margin-right: 200px;
+} Tudo isso aqui é resolvido com flexbox --> justify-content: space-between;*/
+
+.cabecalho__pesquisar__item {
+    display: none;
+}
+
+.superior__secao__container {
+    display: flex;
+    /* alinha itens FORA do eixo principal */
+    align-items: center;  
+    white-space: nowrap;
+    overflow: scroll;
+    gap: 15px;
+}
+
+/* .superior__item {
+    margin-right: 15px;
+}
+
+.superior__item:last-child {
+    margin-right: 0px;
+} Tudo isso aqui pode ser resolvido com a propriedade gap do flexbox*/
+
+/* RODAPÉ: */
+.rodape__container {
+    display: flex;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+    flex-flow: column wrap;
+}
+
+@media screen and (min-width: 834px) {
+    /* CABEÇALHO: */
+    .cabecalho__pesquisar__item {
+        display: block;
+    }
+
+    /* RODAPÉ: */
+    .rodape__container {
+        justify-content: space-between;
+    }
+}
