@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: 0;
+    top: 0%;
 }
 
 /* .logo__item {
@@ -19,10 +19,40 @@
     display: none;
 }
 
+/* MENU: */
+.menu__container {
+    position: fixed;
+    bottom: 0%;
+    height: 74px;
+    width: 100%;
+}
+
+.menu__lista {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.menu__lista li {
+    align-self: center;     /* alinha os elementos fora do eixo principal, de cima para baixo, nesse caso, alinhando os ícones e o texto com o centro do menu (ou seja, em cada item do menu) */
+}
+
+.menu__itens {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu__lista:nth-child(2),
+.menu__lista:nth-child(3),
+.menu__lista:nth-child(4) {
+    display: none;
+}
+
+/* SEÇÃO SUPERIOR: */
 .superior__secao__container {
     display: flex;
-    /* alinha itens FORA do eixo principal */
-    align-items: center;  
+    align-items: center;    /* alinha itens FORA do eixo principal */
     white-space: nowrap;
     overflow: scroll;
     gap: 15px;
@@ -39,12 +69,13 @@
 /* RODAPÉ: */
 .rodape__container {
     display: flex;
+    flex-flow: column wrap;    
     /* flex-direction: column;
     flex-wrap: wrap; */
-    flex-flow: column wrap;
 }
 
 @media screen and (min-width: 834px) {
+
     /* CABEÇALHO: */
     .cabecalho__pesquisar__item {
         display: block;
